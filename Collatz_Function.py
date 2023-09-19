@@ -37,13 +37,13 @@ def Collatz(x):
         plt.plot(N, X, "r", label=text)
         plt.title(text)
 
-        plt.legend()
         plt.ylabel("Values")
         plt.xlabel("Number of Iterations")
+        #plt.savefig(f"{text}", dpi=300)
         plt.show()
 
     return len(X)-1
 
 if __name__ == "__main__":
-    Collatz(9)
+    Collatz(97)
 
