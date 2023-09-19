@@ -29,5 +29,5 @@ text = f"Number of iterationns for initial values up to {n}"
 plt.title(text)
 plt.xlabel("Initial Value")
 plt.ylabel("Number of Iterations")
-plt.savefig(f"{text}", dpi=300)
+#plt.savefig(f"{text}", dpi=300)
 plt.show()
