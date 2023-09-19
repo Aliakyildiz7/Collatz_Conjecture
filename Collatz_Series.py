@@ -11,7 +11,7 @@ for x in range(1, n+1):
     A.append((Collatz(x)))
 
 A_enum = (list(enumerate(A, start=1))) #Enumeration of the result list
-print(A_enum)
+#print(A_enum)
 plt.plot([z[0] for z in A_enum], [z[1] for z in A_enum])
 
 
@@ -25,6 +25,9 @@ for x, y in A_enum:
 
 print(f"The largest number of iterations before reaching the infinite loop occured in the number {maxim_x} with {maxim_y} iterations")
 
+text = f"Number of iterationns for initial values up to {n}"
+plt.title(text)
 plt.xlabel("Initial Value")
 plt.ylabel("Number of Iterations")
+plt.savefig(f"{text}", dpi=300)
 plt.show()
